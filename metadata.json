@@ -1,0 +1,6 @@
+{
+  "name": "AAYAM AI - Create Beyond Imagination",
+  "description": "Futuristic neon AI creation suite featuring AI Photo Generator, Photo Editor, Text-to-Video, and Image-to-Video generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,185 @@
+import { GenerationItem, StyleOption } from '../types';
+
+export const IMAGE_STYLES: StyleOption[] = [
+  {
+    id: 'cyberpunk',
+    name: 'Cyberpunk Neon',
+    description: 'High contrast purple and cyan neon, rain-slicked chrome, volumetric fog',
+    badge: 'Popular',
+    previewUrl: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80',
+  },
+  {
+    id: 'hyper-real',
+    name: 'Hyper-Realistic 8K',
+    description: 'Photorealistic textures, Hasselblad 80mm lens, ray-traced global illumination',
+    badge: 'Ultra HD',
+    previewUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80',
+  },
+  {
+    id: 'anime-scifi',
+    name: 'Anime Sci-Fi',
+    description: 'Makoto Shinkai aesthetic, luminous clouds, particle effects, vibrant cel shading',
+    badge: 'Stylized',
+    previewUrl: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=400&q=80',
+  },
+  {
+    id: 'synthwave',
+    name: 'Synthwave 80s',
+    description: 'Outrun magenta grid, wireframe horizon, chrome text, retro-futuristic vibes',
+    badge: 'Retro',
+    previewUrl: 'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=400&q=80',
+  },
+  {
+    id: 'octane-3d',
+    name: 'Surreal 3D Octane',
+    description: 'C4D Octane render, glass refraction, iridescent metals, floating organic shapes',
+    badge: '3D Render',
+    previewUrl: 'https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=400&q=80',
+  },
+  {
+    id: 'cinematic-film',
+    name: 'Cinematic Anamorphic',
+    description: '35mm anamorphic widescreen, Kodak Vision3 500T grain, dramatic rim lighting',
+    badge: 'Cinematic',
+    previewUrl: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=400&q=80',
+  },
+];
+
+export const ASPECT_RATIOS = [
+  { id: '1:1', label: '1:1 Square', icon: 'square', desc: 'Instagram, Avatars' },
+  { id: '16:9', label: '16:9 Landscape', icon: 'rectangle-horizontal', desc: 'YouTube, Desktop' },
+  { id: '9:16', label: '9:16 Portrait', icon: 'rectangle-vertical', desc: 'Reels, TikTok, Shorts' },
+  { id: '4:3', label: '4:3 Standard', icon: 'monitor', desc: 'Displays, Classic' },
+  { id: '3:4', label: '3:4 Portrait', icon: 'smartphone', desc: 'Mobile Feeds' },
+];
+
+export const SAMPLE_SOURCE_IMAGES = [
+  {
+    id: 'sample-1',
+    name: 'Cyberpunk Portrait',
+    url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80',
+    prompt: 'Add glowing neon purple eye implants and holographic HUD visor interface',
+  },
+  {
+    id: 'sample-2',
+    name: 'Urban Night Street',
+    url: 'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=800&q=80',
+    prompt: 'Transform into futuristic flying vehicle highway with cyan holographic neon billboards',
+  },
+  {
+    id: 'sample-3',
+    name: 'Cybernetic Android',
+    url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+    prompt: 'Add glowing electric blue biomechanical neck seams and neon rim lighting',
+  },
+  {
+    id: 'sample-4',
+    name: 'Futuristic Sports Car',
+    url: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80',
+    prompt: 'Equip with anti-gravity hover turbines and pulsing purple plasma underglow',
+  },
+];
+
+export const PROMPT_SUGGESTIONS = {
+  photo: [
+    'A cyberpunk samurai standing on a skyscraper rooftop in Neo-Tokyo, pouring rain, glowing purple katana, neon holographic reflections',
+    'Futuristic synthetic biomechanical hummingbird with transparent quartz wings sipping liquid neon energy, macro 8K shot',
+    'Astronaut floating inside an ancient neon glowing crystalline temple on Mars, volumetric cyan starlight, cinematic depth of field',
+    'Hyper-realistic cybernetic feline with glowing electric blue circuitry and obsidian armor stalking through an enchanted neon forest',
+  ],
+  edit: [
+    'Add an intricate glowing purple cybernetic eye and subtle holographic circuits on the cheek',
+    'Change the background to a rainy Neo-Tokyo neon alleyway with purple and cyan reflections',
+    'Transform clothing into iridescent glowing nanotech fabric with pulsing light conduits',
+    'Surround with swirling holographic data glyphs and glowing cyan particles',
+  ],
+  video: [
+    'Cinematic camera pan across a sprawling cyberpunk metropolis with flying neon hovercrafts and giant holographic koi fish floating through foggy rain',
+    'Time-lapse of an alien bioluminescent plant blooming in deep space under glowing purple nebulae, emitting stardust spores',
+    'High-speed FPV drone dive through a glowing electric blue particle tunnel emerging into a majestic futuristic cyber canyon',
+    'Futuristic android artisan forging a glowing plasma sphere on an anvil in a dark high-tech workshop, sparks drifting in slow motion',
+  ],
+  img2vid: [
+    'Camera pushes forward smoothly while glowing neon rain gently falls and streetlights cast pulsing purple reflections',
+    'Subtle ambient breathing motion, eyes flicker with cyan digital code, and light rays shift across the face',
+    'Camera orbits slowly in 360 degrees as particles of light drift upward into the night sky',
+    'Volumetric neon fog drifts across the ground while cybernetic elements pulse with glowing energy waves',
+  ],
+};
+
+export const INITIAL_SHOWCASE: GenerationItem[] = [
+  {
+    id: 'showcase-1',
+    tool: 'photo-generator',
+    title: 'Neo-Tokyo Cyber Samurai',
+    prompt: 'A cyberpunk samurai standing on a skyscraper rooftop in Neo-Tokyo, pouring rain, glowing purple katana, neon holographic reflections, 8K ultra detailed',
+    outputUrl: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80',
+    aspectRatio: '16:9',
+    style: 'Cyberpunk Neon',
+    createdAt: 'Just now',
+    isFavorite: true,
+    isRealCloud: true,
+  },
+  {
+    id: 'showcase-2',
+    tool: 'photo-editor',
+    title: 'Holographic Visor Enhancement',
+    prompt: 'Add an intricate glowing electric cyan cybernetic visor and neon particle mist around face',
+    sourceImageUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80',
+    outputUrl: 'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1200&q=80',
+    aspectRatio: '1:1',
+    style: 'Cyberpunk Neon',
+    createdAt: '15m ago',
+    isFavorite: true,
+    isRealCloud: true,
+  },
+  {
+    id: 'showcase-3',
+    tool: 'video-generator',
+    title: 'Bioluminescent Quantum Core',
+    prompt: 'Pulsing quantum neural core spinning with electric blue lightning arcs and violet plasma rings, cinematic slow-motion 60fps',
+    outputUrl: 'https://assets.mixkit.co/videos/preview/mixkit-abstract-laser-lights-background-animation-41484-large.mp4',
+    aspectRatio: '16:9',
+    duration: '10s',
+    createdAt: '1h ago',
+    isFavorite: true,
+    isRealCloud: true,
+  },
+  {
+    id: 'showcase-4',
+    tool: 'image-to-video',
+    title: 'Animated City Rain Matrix',
+    prompt: 'Cinematic slow push-in, volumetric neon fog swirls, holographic rain drops refracting ambient light',
+    sourceImageUrl: 'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=800&q=80',
+    outputUrl: 'https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-screens-with-code-31911-large.mp4',
+    aspectRatio: '16:9',
+    duration: '5s',
+    createdAt: '2h ago',
+    isFavorite: false,
+    isRealCloud: true,
+  },
+  {
+    id: 'showcase-5',
+    tool: 'photo-generator',
+    title: 'Synthetic Aurora Horizon',
+    prompt: 'Massive orbital ring station illuminated by ultraviolet aurora borealis, crystalline solar sails, deep space, photorealistic',
+    outputUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
+    aspectRatio: '16:9',
+    style: 'Hyper-Realistic 8K',
+    createdAt: '3h ago',
+    isFavorite: true,
+    isRealCloud: true,
+  },
+  {
+    id: 'showcase-6',
+    tool: 'photo-generator',
+    title: 'Cybernetic Obsidian Panther',
+    prompt: 'Mechanical panther crafted from polished obsidian and luminescent cyan copper conduits stalking through neon rain',
+    outputUrl: 'https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=80',
+    aspectRatio: '1:1',
+    style: 'Surreal 3D Octane',
+    createdAt: '5h ago',
+    isFavorite: false,
+    isRealCloud: true,
+  },
+];
